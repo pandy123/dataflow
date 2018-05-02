@@ -14,7 +14,7 @@
          "type": "node",
          "request": "launch",
          "name": "dataflow",
-         "program": "${workspaceFolder}/build/dataflow.js"
+         "program": "${workspaceFolder}/build/start.js"
       }
    ]
 }

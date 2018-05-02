@@ -1,3 +1,5 @@
-import { Application } from './base/Application';
+import { Application } from "./Application";
+
+
 var instance = new Application();
 instance.start();

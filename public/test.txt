@@ -1,2 +1,0 @@
-var dd;
-dd.foreach((e)=>{console.log(e.y)});

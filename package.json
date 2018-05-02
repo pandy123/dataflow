@@ -12,11 +12,14 @@
     "@types/body-parser": "^1.17.0",
     "@types/cookie-parser": "^1.4.1",
     "@types/express": "^4.11.1",
+    "@types/lodash": "^4.14.108",
     "EventEmitter": "^1.0.0",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
+    "domain": "0.0.1",
     "express": "^4.16.3",
     "jsonfile": "^4.0.0",
+    "lodash": "^4.17.10",
     "socketio": "^1.0.0"
   }
 }

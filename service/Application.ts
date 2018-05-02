@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser');
 var http = require('http');
 var socketIo = require('socket.io');
+var pathUtil = require("path");
 //var event = require("EventEmitter");
 export class Application {
 
@@ -39,6 +40,14 @@ export class Application {
       // 设置路由
       this._express.use(cookieParser());
       this._express.get('/', function (req: any, res: any, next: any) {
+         var path = __dirname;
+         var current = process.cwd();
+         var execPath = process.execPath;
+         var raletivePath = pathUtil.relative(current, path);
+         var length = ("build").length;
+         var curentPath = raletivePath.substr(length);
+         var lastPath = pathUtil.resolve(__dirname, "..");
+         var baseName = pathUtil.basename(lastPath);
          var cookie = req.cookie;
          res.send('Hello World!');
       });
