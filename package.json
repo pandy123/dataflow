@@ -11,15 +11,22 @@
   "dependencies": {
     "@types/body-parser": "^1.17.0",
     "@types/cookie-parser": "^1.4.1",
+    "@types/events": "^1.2.0",
     "@types/express": "^4.11.1",
     "@types/lodash": "^4.14.108",
+    "@types/mysql": "^2.15.4",
+    "@types/react": "^16.3.13",
     "EventEmitter": "^1.0.0",
+    "antd": "^3.4.5",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
     "domain": "0.0.1",
     "express": "^4.16.3",
     "jsonfile": "^4.0.0",
     "lodash": "^4.17.10",
-    "socketio": "^1.0.0"
+    "mysql": "^2.15.0",
+    "react": "^16.3.2",
+    "socketio": "^1.0.0",
+    "stringtypebuffer": "^1.0.4"
   }
 }

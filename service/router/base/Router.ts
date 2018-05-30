@@ -46,7 +46,6 @@ export class Router {
     * @param callback 回调函数
     */
    public registerRouter(method: RequestMethodEnum, path: string, callback: Function) {
-      path = this.rootPath + path;
       switch (method) {
          case RequestMethodEnum.Get: {
             this.handleRouter.get(path, this.generateInvoker(method, path, callback));

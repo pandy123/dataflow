@@ -1,11 +1,13 @@
-
-
+import { RouterService } from './router/RouterService';
+import { Linker } from './runtime/decorator/Linker';
+import * as router from "./router/index";
 var express = require("express")
 var cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser');
 var http = require('http');
 var socketIo = require('socket.io');
 var pathUtil = require("path");
+var routerDispacher = router;
 //var event = require("EventEmitter");
 export class Application {
 
@@ -21,6 +23,9 @@ export class Application {
    public assPath: string;
    /**日志文件路径 */
    public loggerFilePath: string;
+   /**路由服务 */
+   @Linker(RouterService)
+   public _routerService: RouterService
 
    constructor() {
       this.port = 3000;
@@ -51,6 +56,7 @@ export class Application {
          var cookie = req.cookie;
          res.send('Hello World!');
       });
+      this._routerService.routerDispacher(this._express);
    }
 
    /**

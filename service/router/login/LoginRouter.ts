@@ -1,6 +1,6 @@
-import { Router } from "../../base/router/Router";
-import { RequestMethodEnum } from "../../base/router/RequestMethodEnum";
 import { RouterLinker } from "../../runtime/decorator/router/RouterLinker";
+import { Router } from "../base/Router";
+import { RequestMethodEnum } from "../base/RequestMethodEnum";
 
 
 
@@ -11,7 +11,7 @@ import { RouterLinker } from "../../runtime/decorator/router/RouterLinker";
 export class LoginRouter extends Router {
    constructor() {
       super();
-      this.rootPath = 'login';
+      this.rootPath = '/login';
    }
 
    /**

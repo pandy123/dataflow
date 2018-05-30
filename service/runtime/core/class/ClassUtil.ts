@@ -14,6 +14,6 @@ export class ClassUtil {
     * @param clazz 
     */
    public static getInstance(clazz: Function) {
-      this.classManger.getInstance(clazz);
+      return this.classManger.getInstance(clazz);
    }
 }

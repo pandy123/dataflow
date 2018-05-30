@@ -1,15 +1,17 @@
-import { Router } from "../../base/router/Router";
-import { RequestMethodEnum } from "../../base/router/RequestMethodEnum";
+import { RouterLinker } from "../../runtime/decorator/router/RouterLinker";
+import { Router } from "../base/Router";
+import { RequestMethodEnum } from "../base/RequestMethodEnum";
 
 
 
 /**
  * 数据定义路由
  */
+@RouterLinker()
 export class RegisterRouter extends Router {
    constructor() {
       super();
-      this.rootPath = 'register';
+      this.rootPath = '/register';
    }
 
    /**
